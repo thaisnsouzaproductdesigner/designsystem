@@ -1,0 +1,89 @@
+.exa-button {
+  /* Estrutura Base */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-gap-content-xs, 8px); /* Ícone + Texto */
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-medium);
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+  text-decoration: none;
+  
+  /* Acessibilidade: Focus Ring da Marca */
+  outline: none;
+}
+
+.exa-button:focus-visible {
+  box-shadow: 0 0 0 4px var(--bg-accent-primary-hover, #0C4ECC); /* Anel de foco externo */
+}
+
+.exa-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* --- VARIANTES --- */
+
+/* Primary: Ação Principal (Entrar, Salvar) */
+.exa-button--primary {
+  background-color: var(--bg-accent-primary);
+  color: var(--text-on-brand); /* Contraste garantido */
+  border-radius: var(--border-radius-lg); /* Estilo arredondado da EXA */
+}
+
+.exa-button--primary:hover {
+  background-color: var(--bg-accent-primary-hover);
+  transform: translateY(-1px); /* Micro-interação sutil */
+  box-shadow: var(--effect-drop-shadow-sm);
+}
+
+/* Secondary: Outline (Cancelar, Voltar) */
+.exa-button--secondary {
+  background-color: transparent;
+  border: 1px solid var(--border-accent-primary); /* Borda da marca */
+  color: var(--text-accent-primary);
+  border-radius: var(--border-radius-lg);
+}
+
+.exa-button--secondary:hover {
+  background-color: var(--bg-secondary-hover); /* Fundo sutil no hover */
+}
+
+/* Danger: Ações Destrutivas (Excluir) */
+.exa-button--danger {
+  background-color: var(--bg-error-primary);
+  color: var(--text-on-brand);
+  border-radius: var(--border-radius-lg);
+}
+
+.exa-button--danger:hover {
+  background-color: var(--bg-error-primary-hover);
+}
+
+/* --- TAMANHOS (DENSIDADE) --- */
+
+.exa-button--sm {
+  font-size: var(--font-size-xs, 12px);
+  padding: var(--spacing-squish-sm-y, 6px) var(--spacing-squish-sm-x, 12px);
+}
+
+.exa-button--md {
+  font-size: var(--font-size-sm, 14px);
+  padding: var(--spacing-squish-md-y, 8px) var(--spacing-squish-md-x, 16px);
+}
+
+.exa-button--lg {
+  font-size: var(--font-size-md, 16px);
+  padding: var(--spacing-squish-lg-y, 12px) var(--spacing-squish-lg-x, 24px);
+}
+
+/* Estado Loading */
+.exa-button--loading {
+  color: transparent !important; /* Esconde o texto mas mantém largura */
+  position: relative;
+  pointer-events: none;
+}

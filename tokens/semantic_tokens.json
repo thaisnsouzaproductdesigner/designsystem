@@ -1,432 +1,483 @@
 {
-  "typography": {
-    "heading": {
-      "display": {
-        "$value": "{typography.heading.2xl.bold.value}",
-        "$type": "typography",
-        "$description": "Título de impacto para Hero Sections ou capas (61px)."
-      },
-      "xl": {
-        "$value": "{typography.heading.xl.bold.value}",
-        "$type": "typography",
-        "$description": "H1. Título principal da página (48px)."
-      },
-      "lg": {
-        "$value": "{typography.heading.lg.semi-bold.value}",
-        "$type": "typography",
-        "$description": "H2. Títulos de seções principais (39px)."
-      },
-      "md": {
-        "$value": "{typography.heading.md.semi-bold.value}",
-        "$type": "typography",
-        "$description": "H3. Subtítulos de seções (31px)."
-      },
-      "sm": {
-        "$value": "{typography.heading.sm.medium.value}",
-        "$type": "typography",
-        "$description": "H4. Títulos de cards ou componentes de destaque (25px)."
-      },
-      "xs": {
-        "$value": "{typography.heading.xs.medium.value}",
-        "$type": "typography",
-        "$description": "H5. Títulos menores ou agrupadores de lista (20px)."
-      }
-    },
-    "body": {
-      "large": {
-        "$value": "{typography.body.md.regular.value}",
-        "$type": "typography",
-        "$description": "Texto de destaque ou introdução (Lead) (16px)."
-      },
-      "base": {
-        "$value": "{typography.body.md.regular.value}",
-        "$type": "typography",
-        "$description": "Corpo de texto padrão para leitura longa (16px)."
-      },
-      "base-strong": {
-        "$value": "{typography.body.md.bold.value}",
-        "$type": "typography",
-        "$description": "Variação em negrito do texto padrão para ênfase."
-      },
-      "small": {
-        "$value": "{typography.body.sm.regular.value}",
-        "$type": "typography",
-        "$description": "Texto secundário ou de apoio (14px)."
-      },
-      "caption": {
-        "$value": "{typography.body.xs.regular.value}",
-        "$type": "typography",
-        "$description": "Legendas, timestamps ou notas de rodapé (12px)."
-      }
-    },
-    "label": {
-      "lg": {
-        "$value": "{typography.body.md.medium.value}",
-        "$type": "typography",
-        "$description": "Rótulos para botões grandes ou inputs (16px)."
-      },
-      "md": {
-        "$value": "{typography.body.sm.medium.value}",
-        "$type": "typography",
-        "$description": "Rótulos padrão para botões, tabs e badges (14px)."
-      },
-      "sm": {
-        "$value": "{typography.body.xs.medium.value}",
-        "$type": "typography",
-        "$description": "Rótulos para elementos compactos ou tags pequenas (12px)."
-      }
-    },
-    "code": {
-      "base": {
-        "$value": "{typography.body.sm.regular.value}",
-        "$type": "typography",
-        "$description": "Snippets de código ou dados técnicos."
-      }
-    }
-  },
-  "spacing": {
-    "inset": {
-      "screen": {
-        "xs": { "$value": "{spacing.6}", "$type": "dimension", "$description": "Margem de página Mobile (16px)." },
-        "md": { "$value": "{spacing.10}", "$type": "dimension", "$description": "Margem de página Tablet (32px)." },
-        "lg": { "$value": "{spacing.16}", "$type": "dimension", "$description": "Margem de página Desktop (64px)." }
-      },
-      "card": {
-        "sm": { "$value": "{spacing.5}", "$type": "dimension", "$description": "Padding interno compacto (12px)." },
-        "md": { "$value": "{spacing.6}", "$type": "dimension", "$description": "Padding interno padrão (16px)." },
-        "lg": { "$value": "{spacing.8}", "$type": "dimension", "$description": "Padding interno amplo (24px)." }
-      },
-      "input": {
-        "sm": { "$value": "{spacing.4}", "$type": "dimension", "$description": "Padding horizontal input small (8px)." },
-        "md": { "$value": "{spacing.6}", "$type": "dimension", "$description": "Padding horizontal input medium (16px)." },
-        "lg": { "$value": "{spacing.8}", "$type": "dimension", "$description": "Padding horizontal input large (24px)." }
-      },
-      "squish": {
-        "sm": { "$value": "{spacing.2}", "$type": "dimension", "$description": "Padding vertical reduzido (2px)." },
-        "md": { "$value": "{spacing.4}", "$type": "dimension", "$description": "Padding vertical padrão (8px)." }
-      }
-    },
-    "gap": {
-      "form": {
-        "sm": { "$value": "{spacing.5}", "$type": "dimension", "$description": "Gap label-input (12px)." },
-        "md": { "$value": "{spacing.8}", "$type": "dimension", "$description": "Gap entre inputs (24px)." },
-        "lg": { "$value": "{spacing.10}", "$type": "dimension", "$description": "Gap entre grupos (32px)." }
-      },
-      "content": {
-        "xs": { "$value": "{spacing.3}", "$type": "dimension", "$description": "Gap ícone-texto (4px)." },
-        "sm": { "$value": "{spacing.4}", "$type": "dimension", "$description": "Gap entre tags (8px)." },
-        "md": { "$value": "{spacing.6}", "$type": "dimension", "$description": "Gap entre parágrafos (16px)." }
-      },
-      "section": {
-        "sm": { "$value": "{spacing.12}", "$type": "dimension", "$description": "Gap seções internas (40px)." },
-        "md": { "$value": "{spacing.16}", "$type": "dimension", "$description": "Gap seções padrão (64px)." },
-        "lg": { "$value": "{spacing.19}", "$type": "dimension", "$description": "Gap grandes seções (96px)." }
-      }
-    }
-  },
   "light": {
     "bg": {
-      "primary": { "$value": "{color.neutral.100}", "$type": "color", "$description": "Fundo principal (F6F8FA)." },
-      "secondary": { "$value": "{color.neutral.200}", "$type": "color", "$description": "Fundo secundário." },
-      "tertiary": { "$value": "{color.neutral.300}", "$type": "color", "$description": "Fundo terciário." },
-      "quaternary": { "$value": "{color.neutral.400}", "$type": "color", "$description": "Fundo quaternário." },
-      "primary-hover": { "$value": "{color.neutral.200}", "$type": "color", "$description": "Hover primário." },
-      "secondary-hover": { "$value": "{color.neutral.300}", "$type": "color", "$description": "Hover secundário." },
-      "tertiary-hover": { "$value": "{color.neutral.400}", "$type": "color", "$description": "Hover terciário." },
-      "quaternary-hover": { "$value": "{color.neutral.500}", "$type": "color", "$description": "Hover quaternário." },
-      "black-solid": { "$value": "{color.neutral.900}", "$type": "color", "$description": "Fundo sólido escuro." },
-      "black-solid-hover": { "$value": "{color.neutral.800}", "$type": "color", "$description": "Hover sólido escuro." },
-      "disabled": { "$value": "{color.neutral.200}", "$type": "color", "$description": "Fundo desabilitado." },
-      "disabled-alt": { "$value": "{color.neutral.300}", "$type": "color", "$description": "Fundo desabilitado alternativo." },
-      "accent-primary": { "$value": "{color.brand.500}", "$type": "color", "$description": "Azul EXA Principal." },
-      "accent-primary-hover": { "$value": "{color.brand.600}", "$type": "color", "$description": "Hover Azul EXA." },
-      "accent-solid": { "$value": "{color.brand.600}", "$type": "color", "$description": "Azul EXA Sólido." },
-      "accent-solid-hover": { "$value": "{color.brand.700}", "$type": "color", "$description": "Hover Azul EXA Sólido." },
-      "error-primary": { "$value": "{color.vermillion.500}", "$type": "color", "$description": "Vermillion Base." },
-      "error-primary-hover": { "$value": "{color.vermillion.600}", "$type": "color", "$description": "Hover Vermillion." },
-      "error-secondary": { "$value": "{color.vermillion.100}", "$type": "color", "$description": "Vermillion Sutil." },
-      "error-secondary-hover": { "$value": "{color.vermillion.200}", "$type": "color", "$description": "Hover Vermillion Sutil." },
-      "success-primary": { "$value": "{color.green.500}", "$type": "color", "$description": "Green Base." },
-      "success-primary-hover": { "$value": "{color.green.600}", "$type": "color", "$description": "Hover Green." },
-      "success-secondary": { "$value": "{color.green.100}", "$type": "color", "$description": "Green Sutil." },
-      "success-secondary-hover": { "$value": "{color.green.200}", "$type": "color", "$description": "Hover Green Sutil." },
-      "warning-primary": { "$value": "{color.yellow.500}", "$type": "color", "$description": "Yellow Base." },
-      "warning-primary-hover": { "$value": "{color.yellow.600}", "$type": "color", "$description": "Hover Yellow." },
-      "warning-secondary": { "$value": "{color.yellow.100}", "$type": "color", "$description": "Yellow Sutil." },
-      "warning-secondary-hover": { "$value": "{color.yellow.200}", "$type": "color", "$description": "Hover Yellow Sutil." },
-      "info-primary": { "$value": "{color.brand.500}", "$type": "color", "$description": "Info Base (Brand)." },
-      "info-primary-hover": { "$value": "{color.brand.600}", "$type": "color", "$description": "Hover Info." },
-      "info-secondary": { "$value": "{color.brand.100}", "$type": "color", "$description": "Info Sutil." },
-      "info-secondary-hover": { "$value": "{color.brand.200}", "$type": "color", "$description": "Hover Info Sutil." }
+      "primary": { "value": "{color.neutral.100}", "type": "color", "description": "Fundo principal (F6F8FA)." },
+      "secondary": { "value": "{color.neutral.200}", "type": "color", "description": "Fundo secundário." },
+      "tertiary": { "value": "{color.neutral.300}", "type": "color", "description": "Fundo terciário." },
+      "quaternary": { "value": "{color.neutral.400}", "type": "color", "description": "Fundo quaternário." },
+      "primary-hover": { "value": "{color.neutral.200}", "type": "color", "description": "Hover primário." },
+      "secondary-hover": { "value": "{color.neutral.300}", "type": "color", "description": "Hover secundário." },
+      "tertiary-hover": { "value": "{color.neutral.400}", "type": "color", "description": "Hover terciário." },
+      "quaternary-hover": { "value": "{color.neutral.500}", "type": "color", "description": "Hover quaternário." },
+      "black-solid": { "value": "{color.neutral.900}", "type": "color", "description": "Fundo sólido escuro." },
+      "black-solid-hover": { "value": "{color.neutral.800}", "type": "color", "description": "Hover sólido escuro." },
+      "disabled": { "value": "{color.neutral.200}", "type": "color", "description": "Fundo desabilitado." },
+      "disabled-alt": { "value": "{color.neutral.300}", "type": "color", "description": "Fundo desabilitado alternativo." },
+      "accent-primary": { "value": "{color.brand.500}", "type": "color", "description": "Azul EXA Principal." },
+      "accent-primary-hover": { "value": "{color.brand.600}", "type": "color", "description": "Hover Azul EXA." },
+      "accent-solid": { "value": "{color.brand.600}", "type": "color", "description": "Azul EXA Sólido." },
+      "accent-solid-hover": { "value": "{color.brand.700}", "type": "color", "description": "Hover Azul EXA Sólido." },
+      "error-primary": { "value": "{color.vermillion.500}", "type": "color", "description": "Vermillion Base." },
+      "error-primary-hover": { "value": "{color.vermillion.600}", "type": "color", "description": "Hover Vermillion." },
+      "error-secondary": { "value": "{color.vermillion.100}", "type": "color", "description": "Vermillion Sutil." },
+      "error-secondary-hover": { "value": "{color.vermillion.200}", "type": "color", "description": "Hover Vermillion Sutil." },
+      "success-primary": { "value": "{color.green.500}", "type": "color", "description": "Green Base." },
+      "success-primary-hover": { "value": "{color.green.600}", "type": "color", "description": "Hover Green." },
+      "success-secondary": { "value": "{color.green.100}", "type": "color", "description": "Green Sutil." },
+      "success-secondary-hover": { "value": "{color.green.200}", "type": "color", "description": "Hover Green Sutil." },
+      "warning-primary": { "value": "{color.yellow.500}", "type": "color", "description": "Yellow Base." },
+      "warning-primary-hover": { "value": "{color.yellow.600}", "type": "color", "description": "Hover Yellow." },
+      "warning-secondary": { "value": "{color.yellow.100}", "type": "color", "description": "Yellow Sutil." },
+      "warning-secondary-hover": { "value": "{color.yellow.200}", "type": "color", "description": "Hover Yellow Sutil." },
+      "info-primary": { "value": "{color.brand.500}", "type": "color", "description": "Info Base (Brand)." },
+      "info-primary-hover": { "value": "{color.brand.600}", "type": "color", "description": "Hover Info." },
+      "info-secondary": { "value": "{color.brand.100}", "type": "color", "description": "Info Sutil." },
+      "info-secondary-hover": { "value": "{color.brand.200}", "type": "color", "description": "Hover Info Sutil." }
     },
     "text": {
-      "primary": { "$value": "{color.neutral.900}", "$type": "color", "$description": "Texto principal (quase preto)." },
-      "secondary": { "$value": "{color.neutral.600}", "$type": "color", "$description": "Texto secundário." },
-      "tertiary": { "$value": "{color.neutral.500}", "$type": "color", "$description": "Texto terciário." },
-      "primary-hover": { "$value": "{color.neutral.700}", "$type": "color", "$description": "Hover texto primário." },
-      "secondary-hover": { "$value": "{color.neutral.800}", "$type": "color", "$description": "Hover texto secundário." },
-      "tertiary-hover": { "$value": "{color.neutral.600}", "$type": "color", "$description": "Hover texto terciário." },
-      "disabled": { "$value": "{color.neutral.400}", "$type": "color", "$description": "Texto desabilitado." },
-      "disabled-alt": { "$value": "{color.neutral.300}", "$type": "color", "$description": "Texto desabilitado alternativo." },
-      "placeholder": { "$value": "{color.neutral.500}", "$type": "color", "$description": "Placeholder." },
-      "accent-primary": { "$value": "{color.brand.600}", "$type": "color", "$description": "Texto Accent (Azul)." },
-      "accent-secondary": { "$value": "{color.brand.700}", "$type": "color", "$description": "Texto Accent Secundário." },
-      "accent-primary-hover": { "$value": "{color.brand.800}", "$type": "color", "$description": "Hover texto Accent." },
-      "accent-secondary-hover": { "$value": "{color.brand.900}", "$type": "color", "$description": "Hover texto Accent Secundário." },
-      "error-primary": { "$value": "{color.vermillion.600}", "$type": "color", "$description": "Texto Erro." },
-      "error-secondary": { "$value": "{color.vermillion.700}", "$type": "color", "$description": "Texto Erro Secundário." },
-      "error-primary-hover": { "$value": "{color.vermillion.800}", "$type": "color", "$description": "Hover texto Erro." },
-      "error-secondary-hover": { "$value": "{color.vermillion.900}", "$type": "color", "$description": "Hover texto Erro Secundário." },
-      "success-primary": { "$value": "{color.green.600}", "$type": "color", "$description": "Texto Sucesso." },
-      "success-secondary": { "$value": "{color.green.700}", "$type": "color", "$description": "Texto Sucesso Secundário." },
-      "success-primary-hover": { "$value": "{color.green.800}", "$type": "color", "$description": "Hover texto Sucesso." },
-      "success-secondary-hover": { "$value": "{color.green.900}", "$type": "color", "$description": "Hover texto Sucesso Secundário." },
-      "warning-primary": { "$value": "{color.yellow.700}", "$type": "color", "$description": "Texto Aviso." },
-      "warning-secondary": { "$value": "{color.yellow.800}", "$type": "color", "$description": "Texto Aviso Secundário." },
-      "warning-primary-hover": { "$value": "{color.yellow.800}", "$type": "color", "$description": "Hover texto Aviso." },
-      "warning-secondary-hover": { "$value": "{color.yellow.900}", "$type": "color", "$description": "Hover texto Aviso Secundário." },
-      "info-primary": { "$value": "{color.brand.600}", "$type": "color", "$description": "Texto Info." },
-      "info-secondary": { "$value": "{color.brand.700}", "$type": "color", "$description": "Texto Info Secundário." },
-      "info-primary-hover": { "$value": "{color.brand.800}", "$type": "color", "$description": "Hover texto Info." },
-      "info-secondary-hover": { "$value": "{color.brand.900}", "$type": "color", "$description": "Hover texto Info Secundário." }
+      "primary": { "value": "{color.neutral.900}", "type": "color", "description": "Texto principal (quase preto)." },
+      "secondary": { "value": "{color.neutral.600}", "type": "color", "description": "Texto secundário." },
+      "tertiary": { "value": "{color.neutral.500}", "type": "color", "description": "Texto terciário." },
+      "primary-hover": { "value": "{color.neutral.700}", "type": "color", "description": "Hover texto primário." },
+      "secondary-hover": { "value": "{color.neutral.800}", "type": "color", "description": "Hover texto secundário." },
+      "tertiary-hover": { "value": "{color.neutral.600}", "type": "color", "description": "Hover texto terciário." },
+      "disabled": { "value": "{color.neutral.400}", "type": "color", "description": "Texto desabilitado." },
+      "disabled-alt": { "value": "{color.neutral.300}", "type": "color", "description": "Texto desabilitado alternativo." },
+      "placeholder": { "value": "{color.neutral.500}", "type": "color", "description": "Placeholder." },
+      "accent-primary": { "value": "{color.brand.600}", "type": "color", "description": "Texto Accent (Azul)." },
+      "accent-secondary": { "value": "{color.brand.700}", "type": "color", "description": "Texto Accent Secundário." },
+      "accent-primary-hover": { "value": "{color.brand.800}", "type": "color", "description": "Hover texto Accent." },
+      "accent-secondary-hover": { "value": "{color.brand.900}", "type": "color", "description": "Hover texto Accent Secundário." },
+      "error-primary": { "value": "{color.vermillion.600}", "type": "color", "description": "Texto Erro." },
+      "error-secondary": { "value": "{color.vermillion.700}", "type": "color", "description": "Texto Erro Secundário." },
+      "error-primary-hover": { "value": "{color.vermillion.800}", "type": "color", "description": "Hover texto Erro." },
+      "error-secondary-hover": { "value": "{color.vermillion.900}", "type": "color", "description": "Hover texto Erro Secundário." },
+      "success-primary": { "value": "{color.green.600}", "type": "color", "description": "Texto Sucesso." },
+      "success-secondary": { "value": "{color.green.700}", "type": "color", "description": "Texto Sucesso Secundário." },
+      "success-primary-hover": { "value": "{color.green.800}", "type": "color", "description": "Hover texto Sucesso." },
+      "success-secondary-hover": { "value": "{color.green.900}", "type": "color", "description": "Hover texto Sucesso Secundário." },
+      "warning-primary": { "value": "{color.yellow.700}", "type": "color", "description": "Texto Aviso." },
+      "warning-secondary": { "value": "{color.yellow.800}", "type": "color", "description": "Texto Aviso Secundário." },
+      "warning-primary-hover": { "value": "{color.yellow.800}", "type": "color", "description": "Hover texto Aviso." },
+      "warning-secondary-hover": { "value": "{color.yellow.900}", "type": "color", "description": "Hover texto Aviso Secundário." },
+      "info-primary": { "value": "{color.brand.600}", "type": "color", "description": "Texto Info." },
+      "info-secondary": { "value": "{color.brand.700}", "type": "color", "description": "Texto Info Secundário." },
+      "info-primary-hover": { "value": "{color.brand.800}", "type": "color", "description": "Hover texto Info." },
+      "info-secondary-hover": { "value": "{color.brand.900}", "type": "color", "description": "Hover texto Info Secundário." }
     },
     "icon": {
-      "primary": { "$value": "{color.neutral.900}", "$type": "color", "$description": "Ícone principal." },
-      "secondary": { "$value": "{color.neutral.600}", "$type": "color", "$description": "Ícone secundário." },
-      "tertiary": { "$value": "{color.neutral.500}", "$type": "color", "$description": "Ícone terciário." },
-      "primary-hover": { "$value": "{color.neutral.800}", "$type": "color", "$description": "Hover ícone principal." },
-      "secondary-hover": { "$value": "{color.neutral.700}", "$type": "color", "$description": "Hover ícone secundário." },
-      "tertiary-hover": { "$value": "{color.neutral.600}", "$type": "color", "$description": "Hover ícone terciário." },
-      "disabled": { "$value": "{color.neutral.300}", "$type": "color", "$description": "Ícone desabilitado." },
-      "disabled-alt": { "$value": "{color.neutral.400}", "$type": "color", "$description": "Ícone desabilitado alternativo." },
-      "placeholder": { "$value": "{color.neutral.400}", "$type": "color", "$description": "Ícone placeholder." },
-      "accent-primary": { "$value": "{color.brand.500}", "$type": "color", "$description": "Ícone Accent." },
-      "accent-secondary": { "$value": "{color.brand.700}", "$type": "color", "$description": "Ícone Accent Secundário." },
-      "accent-primary-hover": { "$value": "{color.brand.600}", "$type": "color", "$description": "Hover ícone Accent." },
-      "accent-secondary-hover": { "$value": "{color.brand.800}", "$type": "color", "$description": "Hover ícone Accent Secundário." },
-      "error-primary": { "$value": "{color.vermillion.500}", "$type": "color", "$description": "Ícone Erro." },
-      "error-secondary": { "$value": "{color.vermillion.700}", "$type": "color", "$description": "Ícone Erro Secundário." },
-      "error-primary-hover": { "$value": "{color.vermillion.600}", "$type": "color", "$description": "Hover ícone Erro." },
-      "error-secondary-hover": { "$value": "{color.vermillion.800}", "$type": "color", "$description": "Hover ícone Erro Secundário." },
-      "success-primary": { "$value": "{color.green.500}", "$type": "color", "$description": "Ícone Sucesso." },
-      "success-secondary": { "$value": "{color.green.700}", "$type": "color", "$description": "Ícone Sucesso Secundário." },
-      "success-primary-hover": { "$value": "{color.green.600}", "$type": "color", "$description": "Hover ícone Sucesso." },
-      "success-secondary-hover": { "$value": "{color.green.800}", "$type": "color", "$description": "Hover ícone Sucesso Secundário." },
-      "warning-primary": { "$value": "{color.yellow.500}", "$type": "color", "$description": "Ícone Aviso." },
-      "warning-secondary": { "$value": "{color.yellow.700}", "$type": "color", "$description": "Ícone Aviso Secundário." },
-      "warning-primary-hover": { "$value": "{color.yellow.600}", "$type": "color", "$description": "Hover ícone Aviso." },
-      "warning-secondary-hover": { "$value": "{color.yellow.800}", "$type": "color", "$description": "Hover ícone Aviso Secundário." },
-      "info-primary": { "$value": "{color.brand.500}", "$type": "color", "$description": "Ícone Info." },
-      "info-secondary": { "$value": "{color.brand.700}", "$type": "color", "$description": "Ícone Info Secundário." },
-      "info-primary-hover": { "$value": "{color.brand.600}", "$type": "color", "$description": "Hover ícone Info." },
-      "info-secondary-hover": { "$value": "{color.brand.800}", "$type": "color", "$description": "Hover ícone Info Secundário." }
+      "primary": { "value": "{color.neutral.900}", "type": "color", "description": "Ícone principal." },
+      "secondary": { "value": "{color.neutral.600}", "type": "color", "description": "Ícone secundário." },
+      "tertiary": { "value": "{color.neutral.500}", "type": "color", "description": "Ícone terciário." },
+      "primary-hover": { "value": "{color.neutral.800}", "type": "color", "description": "Hover ícone principal." },
+      "secondary-hover": { "value": "{color.neutral.700}", "type": "color", "description": "Hover ícone secundário." },
+      "tertiary-hover": { "value": "{color.neutral.600}", "type": "color", "description": "Hover ícone terciário." },
+      "disabled": { "value": "{color.neutral.300}", "type": "color", "description": "Ícone desabilitado." },
+      "disabled-alt": { "value": "{color.neutral.400}", "type": "color", "description": "Ícone desabilitado alternativo." },
+      "placeholder": { "value": "{color.neutral.400}", "type": "color", "description": "Ícone placeholder." },
+      "accent-primary": { "value": "{color.brand.500}", "type": "color", "description": "Ícone Accent." },
+      "accent-secondary": { "value": "{color.brand.700}", "type": "color", "description": "Ícone Accent Secundário." },
+      "accent-primary-hover": { "value": "{color.brand.600}", "type": "color", "description": "Hover ícone Accent." },
+      "accent-secondary-hover": { "value": "{color.brand.800}", "type": "color", "description": "Hover ícone Accent Secundário." },
+      "error-primary": { "value": "{color.vermillion.500}", "type": "color", "description": "Ícone Erro." },
+      "error-secondary": { "value": "{color.vermillion.700}", "type": "color", "description": "Ícone Erro Secundário." },
+      "error-primary-hover": { "value": "{color.vermillion.600}", "type": "color", "description": "Hover ícone Erro." },
+      "error-secondary-hover": { "value": "{color.vermillion.800}", "type": "color", "description": "Hover ícone Erro Secundário." },
+      "success-primary": { "value": "{color.green.500}", "type": "color", "description": "Ícone Sucesso." },
+      "success-secondary": { "value": "{color.green.700}", "type": "color", "description": "Ícone Sucesso Secundário." },
+      "success-primary-hover": { "value": "{color.green.600}", "type": "color", "description": "Hover ícone Sucesso." },
+      "success-secondary-hover": { "value": "{color.green.800}", "type": "color", "description": "Hover ícone Sucesso Secundário." },
+      "warning-primary": { "value": "{color.yellow.500}", "type": "color", "description": "Ícone Aviso." },
+      "warning-secondary": { "value": "{color.yellow.700}", "type": "color", "description": "Ícone Aviso Secundário." },
+      "warning-primary-hover": { "value": "{color.yellow.600}", "type": "color", "description": "Hover ícone Aviso." },
+      "warning-secondary-hover": { "value": "{color.yellow.800}", "type": "color", "description": "Hover ícone Aviso Secundário." },
+      "info-primary": { "value": "{color.brand.500}", "type": "color", "description": "Ícone Info." },
+      "info-secondary": { "value": "{color.brand.700}", "type": "color", "description": "Ícone Info Secundário." },
+      "info-primary-hover": { "value": "{color.brand.600}", "type": "color", "description": "Hover ícone Info." },
+      "info-secondary-hover": { "value": "{color.brand.800}", "type": "color", "description": "Hover ícone Info Secundário." }
     },
     "border": {
-      "primary": { "$value": "{color.neutral.200}", "$type": "color", "$description": "Borda padrão." },
-      "secondary": { "$value": "{color.neutral.300}", "$type": "color", "$description": "Borda secundária." },
-      "tertiary": { "$value": "{color.neutral.100}", "$type": "color", "$description": "Borda terciária." },
-      "primary-solid": { "$value": "{color.neutral.900}", "$type": "color", "$description": "Borda sólida." },
-      "disabled": { "$value": "{color.neutral.200}", "$type": "color", "$description": "Borda desabilitada." },
-      "disabled-alt": { "$value": "{color.neutral.100}", "$type": "color", "$description": "Borda desabilitada alternativa." },
-      "accent-primary": { "$value": "{color.brand.500}", "$type": "color", "$description": "Borda Accent." },
-      "accent-secondary": { "$value": "{color.brand.200}", "$type": "color", "$description": "Borda Accent Sutil." },
-      "error-primary": { "$value": "{color.vermillion.500}", "$type": "color", "$description": "Borda Erro." },
-      "error-secondary": { "$value": "{color.vermillion.200}", "$type": "color", "$description": "Borda Erro Sutil." },
-      "success-primary": { "$value": "{color.green.500}", "$type": "color", "$description": "Borda Sucesso." },
-      "success-secondary": { "$value": "{color.green.200}", "$type": "color", "$description": "Borda Sucesso Sutil." },
-      "warning-primary": { "$value": "{color.yellow.500}", "$type": "color", "$description": "Borda Aviso." },
-      "warning-secondary": { "$value": "{color.yellow.200}", "$type": "color", "$description": "Borda Aviso Sutil." },
-      "info-primary": { "$value": "{color.brand.500}", "$type": "color", "$description": "Borda Info." },
-      "info-secondary": { "$value": "{color.brand.200}", "$type": "color", "$description": "Borda Info Sutil." }
+      "primary": { "value": "{color.neutral.200}", "type": "color", "description": "Borda padrão." },
+      "secondary": { "value": "{color.neutral.300}", "type": "color", "description": "Borda secundária." },
+      "tertiary": { "value": "{color.neutral.100}", "type": "color", "description": "Borda terciária." },
+      "primary-solid": { "value": "{color.neutral.900}", "type": "color", "description": "Borda sólida." },
+      "disabled": { "value": "{color.neutral.200}", "type": "color", "description": "Borda desabilitada." },
+      "disabled-alt": { "value": "{color.neutral.100}", "type": "color", "description": "Borda desabilitada alternativa." },
+      "accent-primary": { "value": "{color.brand.500}", "type": "color", "description": "Borda Accent." },
+      "accent-secondary": { "value": "{color.brand.200}", "type": "color", "description": "Borda Accent Sutil." },
+      "error-primary": { "value": "{color.vermillion.500}", "type": "color", "description": "Borda Erro." },
+      "error-secondary": { "value": "{color.vermillion.200}", "type": "color", "description": "Borda Erro Sutil." },
+      "success-primary": { "value": "{color.green.500}", "type": "color", "description": "Borda Sucesso." },
+      "success-secondary": { "value": "{color.green.200}", "type": "color", "description": "Borda Sucesso Sutil." },
+      "warning-primary": { "value": "{color.yellow.500}", "type": "color", "description": "Borda Aviso." },
+      "warning-secondary": { "value": "{color.yellow.200}", "type": "color", "description": "Borda Aviso Sutil." },
+      "info-primary": { "value": "{color.brand.500}", "type": "color", "description": "Borda Info." },
+      "info-secondary": { "value": "{color.brand.200}", "type": "color", "description": "Borda Info Sutil." }
     },
     "gradient": {
       "brand-primary": {
-        "$value": "linear-gradient(135deg, {color.brand.500} 0%, {color.green.500} 100%)",
-        "$type": "gradient",
-        "$description": "Gradiente Institucional Principal (Azul para Verde). Representa crescimento e fluidez."
+        "value": "linear-gradient(135deg, {color.brand.500} 0%, {color.green.500} 100%)",
+        "type": "gradient",
+        "description": "Gradiente Institucional Principal (Azul para Verde). Representa crescimento e fluidez."
       },
       "brand-secondary": {
-        "$value": "linear-gradient(135deg, {color.brand.500} 0%, {color.purple.500} 100%)",
-        "$type": "gradient",
-        "$description": "Gradiente Secundário (Azul para Roxo). Usado para tecnologia e inovação."
+        "value": "linear-gradient(135deg, {color.brand.500} 0%, {color.purple.500} 100%)",
+        "type": "gradient",
+        "description": "Gradiente Secundário (Azul para Roxo). Usado para tecnologia e inovação."
       },
       "brand-cyan": {
-        "$value": "linear-gradient(135deg, {color.brand.500} 0%, {color.cyan.500} 100%)",
-        "$type": "gradient",
-        "$description": "Gradiente de Apoio (Azul para Ciano). Frescor e clareza."
+        "value": "linear-gradient(135deg, {color.brand.500} 0%, {color.cyan.500} 100%)",
+        "type": "gradient",
+        "description": "Gradiente de Apoio (Azul para Ciano). Frescor e clareza."
       },
       "brand-lilac": {
-        "$value": "linear-gradient(135deg, {color.brand.500} 0%, {color.lilac.500} 100%)",
-        "$type": "gradient",
-        "$description": "Gradiente de Apoio (Azul para Lilás). Modernidade e criatividade."
+        "value": "linear-gradient(135deg, {color.brand.500} 0%, {color.lilac.500} 100%)",
+        "type": "gradient",
+        "description": "Gradiente de Apoio (Azul para Lilás). Modernidade e criatividade."
       },
       "brand-vermillion": {
-        "$value": "linear-gradient(135deg, {color.brand.500} 0%, {color.vermillion.500} 100%)",
-        "$type": "gradient",
-        "$description": "Gradiente Quente (Azul para Vermillion). Usado para alertas ou alta energia."
+        "value": "linear-gradient(135deg, {color.brand.500} 0%, {color.vermillion.500} 100%)",
+        "type": "gradient",
+        "description": "Gradiente Quente (Azul para Vermillion). Usado para alertas ou alta energia."
       },
       "brand-yellow": {
-        "$value": "linear-gradient(135deg, {color.brand.500} 0%, {color.yellow.500} 100%)",
-        "$type": "gradient",
-        "$description": "Gradiente de Destaque (Azul para Amarelo). Alto contraste e vibração."
+        "value": "linear-gradient(135deg, {color.brand.500} 0%, {color.yellow.500} 100%)",
+        "type": "gradient",
+        "description": "Gradiente de Destaque (Azul para Amarelo). Alto contraste e vibração."
       },
       "brand-limegreen": {
-        "$value": "linear-gradient(135deg, {color.brand.500} 0%, {color.limegreen.500} 100%)",
-        "$type": "gradient",
-        "$description": "Gradiente Vibrante (Azul para Verde Limão). Energia e agilidade."
+        "value": "linear-gradient(135deg, {color.brand.500} 0%, {color.limegreen.500} 100%)",
+        "type": "gradient",
+        "description": "Gradiente Vibrante (Azul para Verde Limão). Energia e agilidade."
+      }
+    },
+    "effect": {
+      "glass": {
+        "default": {
+          "value": {
+            "color": "#FFFFFF1A", 
+            "blur": "{blur.md}",
+            "type": "backgroundBlur"
+          },
+          "type": "custom-effect",
+          "description": "Efeito Glassmorphism (Vidro) [Brandbook]."
+        }
+      },
+      "drop-shadow": {
+        "3xs": {
+          "value": [
+            { "color": "#0000000D", "offsetX": 0, "offsetY": 1, "blur": 2, "spread": 0, "type": "dropShadow" },
+            { "color": "#00000009", "offsetX": 0, "offsetY": 0, "blur": 1, "spread": 0, "type": "dropShadow" }
+          ],
+          "type": "boxShadow",
+          "description": "Sombra levíssima para elementos interativos pequenos."
+        },
+        "2xs": {
+          "value": [
+            { "color": "#00000013", "offsetX": 0, "offsetY": 4, "blur": 8, "spread": 0, "type": "dropShadow" },
+            { "color": "#0000000E", "offsetX": 0, "offsetY": 1, "blur": 7, "spread": 0, "type": "dropShadow" }
+          ],
+          "type": "boxShadow",
+          "description": "Sombra muito suave para elevação mínima."
+        },
+        "xs": {
+          "value": [
+            { "color": "#0000001A", "offsetX": 0, "offsetY": 7, "blur": 15, "spread": 0, "type": "dropShadow" },
+            { "color": "#00000012", "offsetX": 0, "offsetY": 3, "blur": 12, "spread": 0, "type": "dropShadow" }
+          ],
+          "type": "boxShadow",
+          "description": "Sombra suave padrão para cards ou botões."
+        },
+        "sm": {
+          "value": [
+            { "color": "#00000020", "offsetX": 0, "offsetY": 9, "blur": 22, "spread": 0, "type": "dropShadow" },
+            { "color": "#00000016", "offsetX": 0, "offsetY": 4, "blur": 18, "spread": 0, "type": "dropShadow" }
+          ],
+          "type": "boxShadow",
+          "description": "Sombra média-baixa para elementos em destaque."
+        },
+        "md": {
+          "value": [
+            { "color": "#00000026", "offsetX": 0, "offsetY": 12, "blur": 29, "spread": 0, "type": "dropShadow" },
+            { "color": "#0000001B", "offsetX": 0, "offsetY": 5, "blur": 23, "spread": 0, "type": "dropShadow" }
+          ],
+          "type": "boxShadow",
+          "description": "Sombra média para dropdowns e menus."
+        },
+        "lg": {
+          "value": [
+            { "color": "#0000002D", "offsetX": 0, "offsetY": 15, "blur": 35, "spread": 0, "type": "dropShadow" },
+            { "color": "#0000001F", "offsetX": 0, "offsetY": 6, "blur": 28, "spread": 0, "type": "dropShadow" }
+          ],
+          "type": "boxShadow",
+          "description": "Sombra alta para modais e elementos sobrepostos."
+        },
+        "xl": {
+          "value": [
+            { "color": "#00000033", "offsetX": 0, "offsetY": 18, "blur": 42, "spread": 0, "type": "dropShadow" },
+            { "color": "#00000024", "offsetX": 0, "offsetY": 7, "blur": 34, "spread": 0, "type": "dropShadow" }
+          ],
+          "type": "boxShadow",
+          "description": "Sombra muito alta para elementos de navegação principais ou alertas críticos."
+        }
+      },
+      "inner-shadow": {
+        "xs": {
+          "value": { "color": "#0000000D", "offsetX": 0, "offsetY": 0, "blur": 0, "spread": 1, "type": "innerShadow" },
+          "type": "boxShadow",
+          "description": "Sombra interna muito sutil para profundidade mínima (ex: inputs, bordas internas)."
+        },
+        "sm": {
+          "value": { "color": "#00000020", "offsetX": 0, "offsetY": 1, "blur": 3, "spread": 1, "type": "innerShadow" },
+          "type": "boxShadow",
+          "description": "Sombra interna suave para estados ativos ou pressionados."
+        },
+        "md": {
+          "value": { "color": "#00000033", "offsetX": 0, "offsetY": 3, "blur": 6, "spread": 1, "type": "innerShadow" },
+          "type": "boxShadow",
+          "description": "Sombra interna média para efeitos de inset mais pronunciados."
+        }
       }
     }
   },
   "dark": {
     "bg": {
-      "primary": { "$value": "{color.neutral.900}", "$type": "color", "$description": "Fundo principal Dark Mode." },
-      "secondary": { "$value": "{color.neutral.800}", "$type": "color", "$description": "Fundo secundário." },
-      "tertiary": { "$value": "{color.neutral.700}", "$type": "color", "$description": "Fundo terciário." },
-      "quaternary": { "$value": "{color.neutral.600}", "$type": "color", "$description": "Fundo quaternário." },
-      "primary-hover": { "$value": "{color.neutral.800}", "$type": "color", "$description": "Hover primário." },
-      "secondary-hover": { "$value": "{color.neutral.700}", "$type": "color", "$description": "Hover secundário." },
-      "tertiary-hover": { "$value": "{color.neutral.600}", "$type": "color", "$description": "Hover terciário." },
-      "quaternary-hover": { "$value": "{color.neutral.500}", "$type": "color", "$description": "Hover quaternário." },
-      "black-solid": { "$value": "{color.neutral.200}", "$type": "color", "$description": "Fundo sólido claro." },
-      "black-solid-hover": { "$value": "{color.neutral.300}", "$type": "color", "$description": "Hover sólido claro." },
-      "disabled": { "$value": "{color.neutral.800}", "$type": "color", "$description": "Fundo desabilitado." },
-      "disabled-alt": { "$value": "{color.neutral.700}", "$type": "color", "$description": "Fundo desabilitado alternativo." },
-      "accent-primary": { "$value": "{color.brand.500}", "$type": "color", "$description": "Accent (Brand)." },
-      "accent-primary-hover": { "$value": "{color.brand.400}", "$type": "color", "$description": "Hover Accent." },
-      "accent-solid": { "$value": "{color.brand.600}", "$type": "color", "$description": "Accent Sólido." },
-      "accent-solid-hover": { "$value": "{color.brand.500}", "$type": "color", "$description": "Hover Accent Sólido." },
-      "error-primary": { "$value": "{color.vermillion.500}", "$type": "color", "$description": "Erro Base." },
-      "error-primary-hover": { "$value": "{color.vermillion.400}", "$type": "color", "$description": "Hover Erro." },
-      "error-secondary": { "$value": "{color.vermillion.900}", "$type": "color", "$description": "Erro Sutil." },
-      "error-secondary-hover": { "$value": "{color.vermillion.800}", "$type": "color", "$description": "Hover Erro Sutil." },
-      "success-primary": { "$value": "{color.green.500}", "$type": "color", "$description": "Sucesso Base." },
-      "success-primary-hover": { "$value": "{color.green.400}", "$type": "color", "$description": "Hover Sucesso." },
-      "success-secondary": { "$value": "{color.green.900}", "$type": "color", "$description": "Sucesso Sutil." },
-      "success-secondary-hover": { "$value": "{color.green.800}", "$type": "color", "$description": "Hover Sucesso Sutil." },
-      "warning-primary": { "$value": "{color.yellow.500}", "$type": "color", "$description": "Aviso Base." },
-      "warning-primary-hover": { "$value": "{color.yellow.400}", "$type": "color", "$description": "Hover Aviso." },
-      "warning-secondary": { "$value": "{color.yellow.900}", "$type": "color", "$description": "Aviso Sutil." },
-      "warning-secondary-hover": { "$value": "{color.yellow.800}", "$type": "color", "$description": "Hover Aviso Sutil." },
-      "info-primary": { "$value": "{color.brand.500}", "$type": "color", "$description": "Info Base." },
-      "info-primary-hover": { "$value": "{color.brand.400}", "$type": "color", "$description": "Hover Info." },
-      "info-secondary": { "$value": "{color.brand.900}", "$type": "color", "$description": "Info Sutil." }, 
-      "info-secondary-hover": { "$value": "{color.brand.800}", "$type": "color", "$description": "Hover Info Sutil." }
+      "primary": { "value": "{color.neutral.900}", "type": "color", "description": "Fundo principal Dark Mode." },
+      "secondary": { "value": "{color.neutral.800}", "type": "color", "description": "Fundo secundário." },
+      "tertiary": { "value": "{color.neutral.700}", "type": "color", "description": "Fundo terciário." },
+      "quaternary": { "value": "{color.neutral.600}", "type": "color", "description": "Fundo quaternário." },
+      "primary-hover": { "value": "{color.neutral.800}", "type": "color", "description": "Hover primário." },
+      "secondary-hover": { "value": "{color.neutral.700}", "type": "color", "description": "Hover secundário." },
+      "tertiary-hover": { "value": "{color.neutral.600}", "type": "color", "description": "Hover terciário." },
+      "quaternary-hover": { "value": "{color.neutral.500}", "type": "color", "description": "Hover quaternário." },
+      "black-solid": { "value": "{color.neutral.200}", "type": "color", "description": "Fundo sólido claro." },
+      "black-solid-hover": { "value": "{color.neutral.300}", "type": "color", "description": "Hover sólido claro." },
+      "disabled": { "value": "{color.neutral.800}", "type": "color", "description": "Fundo desabilitado." },
+      "disabled-alt": { "value": "{color.neutral.700}", "type": "color", "description": "Fundo desabilitado alternativo." },
+      "accent-primary": { "value": "{color.brand.500}", "type": "color", "description": "Accent (Brand)." },
+      "accent-primary-hover": { "value": "{color.brand.400}", "type": "color", "description": "Hover Accent." },
+      "accent-solid": { "value": "{color.brand.600}", "type": "color", "description": "Accent Sólido." },
+      "accent-solid-hover": { "value": "{color.brand.500}", "type": "color", "description": "Hover Accent Sólido." },
+      "error-primary": { "value": "{color.vermillion.500}", "type": "color", "description": "Erro Base." },
+      "error-primary-hover": { "value": "{color.vermillion.400}", "type": "color", "description": "Hover Erro." },
+      "error-secondary": { "value": "{color.vermillion.900}", "type": "color", "description": "Erro Sutil." },
+      "error-secondary-hover": { "value": "{color.vermillion.800}", "type": "color", "description": "Hover Erro Sutil." },
+      "success-primary": { "value": "{color.green.500}", "type": "color", "description": "Sucesso Base." },
+      "success-primary-hover": { "value": "{color.green.400}", "type": "color", "description": "Hover Sucesso." },
+      "success-secondary": { "value": "{color.green.900}", "type": "color", "description": "Sucesso Sutil." },
+      "success-secondary-hover": { "value": "{color.green.800}", "type": "color", "description": "Hover Sucesso Sutil." },
+      "warning-primary": { "value": "{color.yellow.500}", "type": "color", "description": "Aviso Base." },
+      "warning-primary-hover": { "value": "{color.yellow.400}", "type": "color", "description": "Hover Aviso." },
+      "warning-secondary": { "value": "{color.yellow.900}", "type": "color", "description": "Aviso Sutil." },
+      "warning-secondary-hover": { "value": "{color.yellow.800}", "type": "color", "description": "Hover Aviso Sutil." },
+      "info-primary": { "value": "{color.brand.500}", "type": "color", "description": "Info Base." },
+      "info-primary-hover": { "value": "{color.brand.400}", "type": "color", "description": "Hover Info." },
+      "info-secondary": { "value": "{color.brand.900}", "type": "color", "description": "Info Sutil." }, 
+      "info-secondary-hover": { "value": "{color.brand.800}", "type": "color", "description": "Hover Info Sutil." }
     },
     "text": {
-      "primary": { "$value": "{color.neutral.200}", "$type": "color", "$description": "Texto principal." },
-      "secondary": { "$value": "{color.neutral.400}", "$type": "color", "$description": "Texto secundário." },
-      "tertiary": { "$value": "{color.neutral.600}", "$type": "color", "$description": "Texto terciário." },
-      "primary-hover": { "$value": "{color.neutral.100}", "$type": "color", "$description": "Hover texto primário." },
-      "secondary-hover": { "$value": "{color.neutral.300}", "$type": "color", "$description": "Hover texto secundário." },
-      "tertiary-hover": { "$value": "{color.neutral.500}", "$type": "color", "$description": "Hover texto terciário." },
-      "disabled": { "$value": "{color.neutral.700}", "$type": "color", "$description": "Texto desabilitado." },
-      "disabled-alt": { "$value": "{color.neutral.800}", "$type": "color", "$description": "Texto desabilitado alternativo." },
-      "placeholder": { "$value": "{color.neutral.600}", "$type": "color", "$description": "Placeholder." },
-      "accent-primary": { "$value": "{color.brand.400}", "$type": "color", "$description": "Texto Accent." },
-      "accent-secondary": { "$value": "{color.brand.300}", "$type": "color", "$description": "Texto Accent Secundário." },
-      "accent-primary-hover": { "$value": "{color.brand.300}", "$type": "color", "$description": "Hover texto Accent." },
-      "accent-secondary-hover": { "$value": "{color.brand.200}", "$type": "color", "$description": "Hover texto Accent Secundário." },
-      "error-primary": { "$value": "{color.vermillion.400}", "$type": "color", "$description": "Texto Erro." },
-      "error-secondary": { "$value": "{color.vermillion.300}", "$type": "color", "$description": "Texto Erro Secundário." },
-      "error-primary-hover": { "$value": "{color.vermillion.300}", "$type": "color", "$description": "Hover texto Erro." },
-      "error-secondary-hover": { "$value": "{color.vermillion.200}", "$type": "color", "$description": "Hover texto Erro Secundário." },
-      "success-primary": { "$value": "{color.green.400}", "$type": "color", "$description": "Texto Sucesso." },
-      "success-secondary": { "$value": "{color.green.300}", "$type": "color", "$description": "Texto Sucesso Secundário." },
-      "success-primary-hover": { "$value": "{color.green.300}", "$type": "color", "$description": "Hover texto Sucesso." },
-      "success-secondary-hover": { "$value": "{color.green.200}", "$type": "color", "$description": "Hover texto Sucesso Secundário." },
-      "warning-primary": { "$value": "{color.yellow.400}", "$type": "color", "$description": "Texto Aviso." },
-      "warning-secondary": { "$value": "{color.yellow.300}", "$type": "color", "$description": "Texto Aviso Secundário." },
-      "warning-primary-hover": { "$value": "{color.yellow.300}", "$type": "color", "$description": "Hover texto Aviso." },
-      "warning-secondary-hover": { "$value": "{color.yellow.200}", "$type": "color", "$description": "Hover texto Aviso Secundário." },
-      "info-primary": { "$value": "{color.brand.400}", "$type": "color", "$description": "Texto Info." },
-      "info-secondary": { "$value": "{color.brand.300}", "$type": "color", "$description": "Texto Info Secundário." },
-      "info-primary-hover": { "$value": "{color.brand.300}", "$type": "color", "$description": "Hover texto Info." },
-      "info-secondary-hover": { "$value": "{color.brand.200}", "$type": "color", "$description": "Hover texto Info Secundário." }
+      "primary": { "value": "{color.neutral.200}", "type": "color", "description": "Texto principal." },
+      "secondary": { "value": "{color.neutral.400}", "type": "color", "description": "Texto secundário." },
+      "tertiary": { "value": "{color.neutral.600}", "type": "color", "description": "Texto terciário." },
+      "primary-hover": { "value": "{color.neutral.100}", "type": "color", "description": "Hover texto primário." },
+      "secondary-hover": { "value": "{color.neutral.300}", "type": "color", "description": "Hover texto secundário." },
+      "tertiary-hover": { "value": "{color.neutral.500}", "type": "color", "description": "Hover texto terciário." },
+      "disabled": { "value": "{color.neutral.700}", "type": "color", "description": "Texto desabilitado." },
+      "disabled-alt": { "value": "{color.neutral.800}", "type": "color", "description": "Texto desabilitado alternativo." },
+      "placeholder": { "value": "{color.neutral.600}", "type": "color", "description": "Placeholder." },
+      "accent-primary": { "value": "{color.brand.400}", "type": "color", "description": "Texto Accent." },
+      "accent-secondary": { "value": "{color.brand.300}", "type": "color", "description": "Texto Accent Secundário." },
+      "accent-primary-hover": { "value": "{color.brand.300}", "type": "color", "description": "Hover texto Accent." },
+      "accent-secondary-hover": { "value": "{color.brand.200}", "type": "color", "description": "Hover texto Accent Secundário." },
+      "error-primary": { "value": "{color.vermillion.400}", "type": "color", "description": "Texto Erro." },
+      "error-secondary": { "value": "{color.vermillion.300}", "type": "color", "description": "Texto Erro Secundário." },
+      "error-primary-hover": { "value": "{color.vermillion.300}", "type": "color", "description": "Hover texto Erro." },
+      "error-secondary-hover": { "value": "{color.vermillion.200}", "type": "color", "description": "Hover texto Erro Secundário." },
+      "success-primary": { "value": "{color.green.400}", "type": "color", "description": "Texto Sucesso." },
+      "success-secondary": { "value": "{color.green.300}", "type": "color", "description": "Texto Sucesso Secundário." },
+      "success-primary-hover": { "value": "{color.green.300}", "type": "color", "description": "Hover texto Sucesso." },
+      "success-secondary-hover": { "value": "{color.green.200}", "type": "color", "description": "Hover texto Sucesso Secundário." },
+      "warning-primary": { "value": "{color.yellow.400}", "type": "color", "description": "Texto Aviso." },
+      "warning-secondary": { "value": "{color.yellow.300}", "type": "color", "description": "Texto Aviso Secundário." },
+      "warning-primary-hover": { "value": "{color.yellow.300}", "type": "color", "description": "Hover texto Aviso." },
+      "warning-secondary-hover": { "value": "{color.yellow.200}", "type": "color", "description": "Hover texto Aviso Secundário." },
+      "info-primary": { "value": "{color.brand.400}", "type": "color", "description": "Texto Info." },
+      "info-secondary": { "value": "{color.brand.300}", "type": "color", "description": "Texto Info Secundário." },
+      "info-primary-hover": { "value": "{color.brand.300}", "type": "color", "description": "Hover texto Info." },
+      "info-secondary-hover": { "value": "{color.brand.200}", "type": "color", "description": "Hover texto Info Secundário." }
     },
     "icon": {
-      "primary": { "$value": "{color.neutral.100}", "$type": "color", "$description": "Ícone principal." },
-      "secondary": { "$value": "{color.neutral.400}", "$type": "color", "$description": "Ícone secundário." },
-      "tertiary": { "$value": "{color.neutral.500}", "$type": "color", "$description": "Ícone terciário." },
-      "primary-hover": { "$value": "{color.neutral.200}", "$type": "color", "$description": "Hover ícone principal." },
-      "secondary-hover": { "$value": "{color.neutral.300}", "$type": "color", "$description": "Hover ícone secundário." },
-      "tertiary-hover": { "$value": "{color.neutral.400}", "$type": "color", "$description": "Hover ícone terciário." },
-      "disabled": { "$value": "{color.neutral.700}", "$type": "color", "$description": "Ícone desabilitado." },
-      "disabled-alt": { "$value": "{color.neutral.800}", "$type": "color", "$description": "Ícone desabilitado alternativo." },
-      "placeholder": { "$value": "{color.neutral.600}", "$type": "color", "$description": "Ícone placeholder." },
-      "accent-primary": { "$value": "{color.brand.400}", "$type": "color", "$description": "Ícone Accent." },
-      "accent-secondary": { "$value": "{color.brand.300}", "$type": "color", "$description": "Ícone Accent Secundário." },
-      "accent-primary-hover": { "$value": "{color.brand.300}", "$type": "color", "$description": "Hover ícone Accent." },
-      "accent-secondary-hover": { "$value": "{color.brand.200}", "$type": "color", "$description": "Hover ícone Accent Secundário." },
-      "error-primary": { "$value": "{color.vermillion.400}", "$type": "color", "$description": "Ícone Erro." },
-      "error-secondary": { "$value": "{color.vermillion.300}", "$type": "color", "$description": "Ícone Erro Secundário." },
-      "error-primary-hover": { "$value": "{color.vermillion.300}", "$type": "color", "$description": "Hover ícone Erro." },
-      "error-secondary-hover": { "$value": "{color.vermillion.200}", "$type": "color", "$description": "Hover ícone Erro Secundário." },
-      "success-primary": { "$value": "{color.green.400}", "$type": "color", "$description": "Ícone Sucesso." },
-      "success-secondary": { "$value": "{color.green.300}", "$type": "color", "$description": "Ícone Sucesso Secundário." },
-      "success-primary-hover": { "$value": "{color.green.300}", "$type": "color", "$description": "Hover ícone Sucesso." },
-      "success-secondary-hover": { "$value": "{color.green.200}", "$type": "color", "$description": "Hover ícone Sucesso Secundário." },
-      "warning-primary": { "$value": "{color.yellow.400}", "$type": "color", "$description": "Ícone Aviso." },
-      "warning-secondary": { "$value": "{color.yellow.300}", "$type": "color", "$description": "Ícone Aviso Secundário." },
-      "warning-primary-hover": { "$value": "{color.yellow.300}", "$type": "color", "$description": "Hover ícone Aviso." },
-      "warning-secondary-hover": { "$value": "{color.yellow.200}", "$type": "color", "$description": "Hover ícone Aviso Secundário." },
-      "info-primary": { "$value": "{color.brand.400}", "$type": "color", "$description": "Ícone Info." },
-      "info-secondary": { "$value": "{color.brand.300}", "$type": "color", "$description": "Ícone Info Secundário." },
-      "info-primary-hover": { "$value": "{color.brand.300}", "$type": "color", "$description": "Hover ícone Info." },
-      "info-secondary-hover": { "$value": "{color.brand.200}", "$type": "color", "$description": "Hover ícone Info Secundário." }
+      "primary": { "value": "{color.neutral.100}", "type": "color", "description": "Ícone principal." },
+      "secondary": { "value": "{color.neutral.400}", "type": "color", "description": "Ícone secundário." },
+      "tertiary": { "value": "{color.neutral.500}", "type": "color", "description": "Ícone terciário." },
+      "primary-hover": { "value": "{color.neutral.200}", "type": "color", "description": "Hover ícone principal." },
+      "secondary-hover": { "value": "{color.neutral.300}", "type": "color", "description": "Hover ícone secundário." },
+      "tertiary-hover": { "value": "{color.neutral.400}", "type": "color", "description": "Hover ícone terciário." },
+      "disabled": { "value": "{color.neutral.700}", "type": "color", "description": "Ícone desabilitado." },
+      "disabled-alt": { "value": "{color.neutral.800}", "type": "color", "description": "Ícone desabilitado alternativo." },
+      "placeholder": { "value": "{color.neutral.600}", "type": "color", "description": "Ícone placeholder." },
+      "accent-primary": { "value": "{color.brand.400}", "type": "color", "description": "Ícone Accent." },
+      "accent-secondary": { "value": "{color.brand.300}", "type": "color", "description": "Ícone Accent Secundário." },
+      "accent-primary-hover": { "value": "{color.brand.300}", "type": "color", "description": "Hover ícone Accent." },
+      "accent-secondary-hover": { "value": "{color.brand.200}", "type": "color", "description": "Hover ícone Accent Secundário." },
+      "error-primary": { "value": "{color.vermillion.400}", "type": "color", "description": "Ícone Erro." },
+      "error-secondary": { "value": "{color.vermillion.300}", "type": "color", "description": "Ícone Erro Secundário." },
+      "error-primary-hover": { "value": "{color.vermillion.300}", "type": "color", "description": "Hover ícone Erro." },
+      "error-secondary-hover": { "value": "{color.vermillion.200}", "type": "color", "description": "Hover ícone Erro Secundário." },
+      "success-primary": { "value": "{color.green.400}", "type": "color", "description": "Ícone Sucesso." },
+      "success-secondary": { "value": "{color.green.300}", "type": "color", "description": "Ícone Sucesso Secundário." },
+      "success-primary-hover": { "value": "{color.green.300}", "type": "color", "description": "Hover ícone Sucesso." },
+      "success-secondary-hover": { "value": "{color.green.200}", "type": "color", "description": "Hover ícone Sucesso Secundário." },
+      "warning-primary": { "value": "{color.yellow.400}", "type": "color", "description": "Ícone Aviso." },
+      "warning-secondary": { "value": "{color.yellow.300}", "type": "color", "description": "Ícone Aviso Secundário." },
+      "warning-primary-hover": { "value": "{color.yellow.300}", "type": "color", "description": "Hover ícone Aviso." },
+      "warning-secondary-hover": { "value": "{color.yellow.200}", "type": "color", "description": "Hover ícone Aviso Secundário." },
+      "info-primary": { "value": "{color.brand.400}", "type": "color", "description": "Ícone Info." },
+      "info-secondary": { "value": "{color.brand.300}", "type": "color", "description": "Ícone Info Secundário." },
+      "info-primary-hover": { "value": "{color.brand.300}", "type": "color", "description": "Hover ícone Info." },
+      "info-secondary-hover": { "value": "{color.brand.200}", "type": "color", "description": "Hover ícone Info Secundário." }
     },
     "border": {
-      "primary": { "$value": "{color.neutral.700}", "$type": "color", "$description": "Borda padrão." },
-      "secondary": { "$value": "{color.neutral.800}", "$type": "color", "$description": "Borda secundária." },
-      "tertiary": { "$value": "{color.neutral.900}", "$type": "color", "$description": "Borda terciária." },
-      "primary-solid": { "$value": "{color.neutral.200}", "$type": "color", "$description": "Borda sólida." },
-      "disabled": { "$value": "{color.neutral.800}", "$type": "color", "$description": "Borda desabilitada." },
-      "disabled-alt": { "$value": "{color.neutral.900}", "$type": "color", "$description": "Borda desabilitada alternativa." },
-      "accent-primary": { "$value": "{color.brand.400}", "$type": "color", "$description": "Borda Accent." },
-      "accent-secondary": { "$value": "{color.brand.800}", "$type": "color", "$description": "Borda Accent Sutil." },
-      "error-primary": { "$value": "{color.vermillion.400}", "$type": "color", "$description": "Borda Erro." },
-      "error-secondary": { "$value": "{color.vermillion.800}", "$type": "color", "$description": "Borda Erro Sutil." },
-      "success-primary": { "$value": "{color.green.400}", "$type": "color", "$description": "Borda Sucesso." },
-      "success-secondary": { "$value": "{color.green.800}", "$type": "color", "$description": "Borda Sucesso Sutil." },
-      "warning-primary": { "$value": "{color.yellow.400}", "$type": "color", "$description": "Borda Aviso." },
-      "warning-secondary": { "$value": "{color.yellow.800}", "$type": "color", "$description": "Borda Aviso Sutil." },
-      "info-primary": { "$value": "{color.brand.400}", "$type": "color", "$description": "Borda Info." },
-      "info-secondary": { "$value": "{color.brand.800}", "$type": "color", "$description": "Borda Info Sutil." }
+      "primary": { "value": "{color.neutral.700}", "type": "color", "description": "Borda padrão." },
+      "secondary": { "value": "{color.neutral.800}", "type": "color", "description": "Borda secundária." },
+      "tertiary": { "value": "{color.neutral.900}", "type": "color", "description": "Borda terciária." },
+      "primary-solid": { "value": "{color.neutral.200}", "type": "color", "description": "Borda sólida." },
+      "disabled": { "value": "{color.neutral.800}", "type": "color", "description": "Borda desabilitada." },
+      "disabled-alt": { "value": "{color.neutral.900}", "type": "color", "description": "Borda desabilitada alternativa." },
+      "accent-primary": { "value": "{color.brand.400}", "type": "color", "description": "Borda Accent." },
+      "accent-secondary": { "value": "{color.brand.800}", "type": "color", "description": "Borda Accent Sutil." },
+      "error-primary": { "value": "{color.vermillion.400}", "type": "color", "description": "Borda Erro." },
+      "error-secondary": { "value": "{color.vermillion.800}", "type": "color", "description": "Borda Erro Sutil." },
+      "success-primary": { "value": "{color.green.400}", "type": "color", "description": "Borda Sucesso." },
+      "success-secondary": { "value": "{color.green.800}", "type": "color", "description": "Borda Sucesso Sutil." },
+      "warning-primary": { "value": "{color.yellow.400}", "type": "color", "description": "Borda Aviso." },
+      "warning-secondary": { "value": "{color.yellow.800}", "type": "color", "description": "Borda Aviso Sutil." },
+      "info-primary": { "value": "{color.brand.400}", "type": "color", "description": "Borda Info." },
+      "info-secondary": { "value": "{color.brand.800}", "type": "color", "description": "Borda Info Sutil." }
     },
     "gradient": {
       "brand-primary": {
-        "$value": "linear-gradient(135deg, {color.brand.500} 0%, {color.green.500} 100%)",
-        "$type": "gradient",
-        "$description": "Gradiente Institucional em Dark Mode. Mantém a vibração original da marca."
+        "value": "linear-gradient(135deg, {color.brand.500} 0%, {color.green.500} 100%)",
+        "type": "gradient",
+        "description": "Gradiente Institucional Principal (Azul para Verde). Representa crescimento e fluidez."
       },
       "brand-secondary": {
-        "$value": "linear-gradient(135deg, {color.brand.500} 0%, {color.purple.500} 100%)",
-        "$type": "gradient",
-        "$description": "Gradiente Secundário em Dark Mode."
+        "value": "linear-gradient(135deg, {color.brand.500} 0%, {color.purple.500} 100%)",
+        "type": "gradient",
+        "description": "Gradiente Secundário (Azul para Roxo). Usado para tecnologia e inovação."
       },
       "brand-cyan": {
-        "$value": "linear-gradient(135deg, {color.brand.500} 0%, {color.cyan.500} 100%)",
-        "$type": "gradient",
-        "$description": "Gradiente de Apoio (Ciano) em Dark Mode."
+        "value": "linear-gradient(135deg, {color.brand.500} 0%, {color.cyan.500} 100%)",
+        "type": "gradient",
+        "description": "Gradiente de Apoio (Azul para Ciano). Frescor e clareza."
       },
       "brand-lilac": {
-        "$value": "linear-gradient(135deg, {color.brand.500} 0%, {color.lilac.500} 100%)",
-        "$type": "gradient",
-        "$description": "Gradiente de Apoio (Lilás) em Dark Mode."
+        "value": "linear-gradient(135deg, {color.brand.500} 0%, {color.lilac.500} 100%)",
+        "type": "gradient",
+        "description": "Gradiente de Apoio (Azul para Lilás). Modernidade e criatividade."
       },
       "brand-vermillion": {
-        "$value": "linear-gradient(135deg, {color.brand.500} 0%, {color.vermillion.500} 100%)",
-        "$type": "gradient",
-        "$description": "Gradiente Quente em Dark Mode. Usar com cautela em áreas grandes."
+        "value": "linear-gradient(135deg, {color.brand.500} 0%, {color.vermillion.500} 100%)",
+        "type": "gradient",
+        "description": "Gradiente Quente (Azul para Vermillion). Usado para alertas ou alta energia."
       },
       "brand-yellow": {
-        "$value": "linear-gradient(135deg, {color.brand.500} 0%, {color.yellow.500} 100%)",
-        "$type": "gradient",
-        "$description": "Gradiente de Destaque (Amarelo) em Dark Mode."
+        "value": "linear-gradient(135deg, {color.brand.500} 0%, {color.yellow.500} 100%)",
+        "type": "gradient",
+        "description": "Gradiente de Destaque (Azul para Amarelo). Alto contraste e vibração."
       },
       "brand-limegreen": {
-        "$value": "linear-gradient(135deg, {color.brand.500} 0%, {color.limegreen.500} 100%)",
-        "$type": "gradient",
-        "$description": "Gradiente Vibrante (Verde Limão) em Dark Mode."
+        "value": "linear-gradient(135deg, {color.brand.500} 0%, {color.limegreen.500} 100%)",
+        "type": "gradient",
+        "description": "Gradiente Vibrante (Azul para Verde Limão). Energia e agilidade."
+      }
+    },
+    "effect": {
+      "glass": {
+        "default": {
+          "value": {
+            "color": "#0A0D1480", 
+            "blur": "{blur.md}",
+            "type": "backgroundBlur"
+          },
+          "type": "custom-effect",
+          "description": "Efeito Glassmorphism (Vidro) [Brandbook]."
+        }
+      },
+      "drop-shadow": {
+        "3xs": {
+          "value": [
+            { "color": "#0000000D", "offsetX": 0, "offsetY": 1, "blur": 2, "spread": 0, "type": "dropShadow" },
+            { "color": "#00000009", "offsetX": 0, "offsetY": 0, "blur": 1, "spread": 0, "type": "dropShadow" }
+          ],
+          "type": "boxShadow",
+          "description": "Sombra levíssima para elementos interativos pequenos."
+        },
+        "2xs": {
+          "value": [
+            { "color": "#00000013", "offsetX": 0, "offsetY": 4, "blur": 8, "spread": 0, "type": "dropShadow" },
+            { "color": "#0000000E", "offsetX": 0, "offsetY": 1, "blur": 7, "spread": 0, "type": "dropShadow" }
+          ],
+          "type": "boxShadow",
+          "description": "Sombra muito suave para elevação mínima."
+        },
+        "xs": {
+          "value": [
+            { "color": "#0000001A", "offsetX": 0, "offsetY": 7, "blur": 15, "spread": 0, "type": "dropShadow" },
+            { "color": "#00000012", "offsetX": 0, "offsetY": 3, "blur": 12, "spread": 0, "type": "dropShadow" }
+          ],
+          "type": "boxShadow",
+          "description": "Sombra suave padrão para cards ou botões."
+        },
+        "sm": {
+          "value": [
+            { "color": "#00000020", "offsetX": 0, "offsetY": 9, "blur": 22, "spread": 0, "type": "dropShadow" },
+            { "color": "#00000016", "offsetX": 0, "offsetY": 4, "blur": 18, "spread": 0, "type": "dropShadow" }
+          ],
+          "type": "boxShadow",
+          "description": "Sombra média-baixa para elementos em destaque."
+        },
+        "md": {
+          "value": [
+            { "color": "#00000026", "offsetX": 0, "offsetY": 12, "blur": 29, "spread": 0, "type": "dropShadow" },
+            { "color": "#0000001B", "offsetX": 0, "offsetY": 5, "blur": 23, "spread": 0, "type": "dropShadow" }
+          ],
+          "type": "boxShadow",
+          "description": "Sombra média para dropdowns e menus."
+        },
+        "lg": {
+          "value": [
+            { "color": "#0000002D", "offsetX": 0, "offsetY": 15, "blur": 35, "spread": 0, "type": "dropShadow" },
+            { "color": "#0000001F", "offsetX": 0, "offsetY": 6, "blur": 28, "spread": 0, "type": "dropShadow" }
+          ],
+          "type": "boxShadow",
+          "description": "Sombra alta para modais e elementos sobrepostos."
+        },
+        "xl": {
+          "value": [
+            { "color": "#00000033", "offsetX": 0, "offsetY": 18, "blur": 42, "spread": 0, "type": "dropShadow" },
+            { "color": "#00000024", "offsetX": 0, "offsetY": 7, "blur": 34, "spread": 0, "type": "dropShadow" }
+          ],
+          "type": "boxShadow",
+          "description": "Sombra muito alta para elementos de navegação principais ou alertas críticos."
+        }
+      },
+      "inner-shadow": {
+        "xs": {
+          "value": { "color": "#0000000D", "offsetX": 0, "offsetY": 0, "blur": 0, "spread": 1, "type": "innerShadow" },
+          "type": "boxShadow",
+          "description": "Sombra interna muito sutil para profundidade mínima (ex: inputs, bordas internas)."
+        },
+        "sm": {
+          "value": { "color": "#00000020", "offsetX": 0, "offsetY": 1, "blur": 3, "spread": 1, "type": "innerShadow" },
+          "type": "boxShadow",
+          "description": "Sombra interna suave para estados ativos ou pressionados."
+        },
+        "md": {
+          "value": { "color": "#00000033", "offsetX": 0, "offsetY": 3, "blur": 6, "spread": 1, "type": "innerShadow" },
+          "type": "boxShadow",
+          "description": "Sombra interna média para efeitos de inset mais pronunciados."
+        }
       }
     }
   }

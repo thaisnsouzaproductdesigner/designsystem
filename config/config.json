@@ -1,16 +1,66 @@
 {
-  "source": [
-    "tokens/primitive_tokens.json",
-    "tokens/semantic_tokens.json"
-  ],
+  "source": ["tokens/**/*.json"],
   "platforms": {
-    "css": {
+    "css-global": {
       "transformGroup": "css",
       "buildPath": "src/styles/tokens/",
       "files": [
         {
-          "destination": "variables.css",
-          "format": "css/variables"
+          "destination": "primitives.css",
+          "format": "css/variables",
+          "filter": {
+            "attributes": {
+              "category": "brand" 
+            }
+          },
+          "options": {
+            "outputReferences": true
+          }
+        },
+        {
+           "destination": "primitives-neutral.css",
+            "format": "css/variables",
+            "filter": {
+              "attributes": {
+                 "category": "neutral"
+              }
+            }
+        }
+      ]
+    },
+    "css-light": {
+      "transformGroup": "css",
+      "buildPath": "src/styles/tokens/",
+      "files": [
+        {
+          "destination": "theme-light.css",
+          "format": "css/variables",
+          "filter": {
+            "attributes": {
+              "category": "light"
+            }
+          },
+          "options": {
+            "selector": ":root"
+          }
+        }
+      ]
+    },
+    "css-dark": {
+      "transformGroup": "css",
+      "buildPath": "src/styles/tokens/",
+      "files": [
+        {
+          "destination": "theme-dark.css",
+          "format": "css/variables",
+          "filter": {
+            "attributes": {
+              "category": "dark"
+            }
+          },
+          "options": {
+            "selector": "[data-theme='dark']"
+          }
         }
       ]
     }
