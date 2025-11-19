@@ -1,0 +1,45 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+
+<Meta title="Foundations/Colors" />
+
+# Cores da Marca (Brand)
+
+<ColorPalette>
+  <ColorItem
+    title="Brand Blue (Institucional)"
+    subtitle="Azul principal da EXA"
+    colors={{
+      'Base (500)': '#1060FF',
+      'Dark (700)': '#0F3CBE',
+      'Darker (900)': '#162664',
+      'Light (200)': '#C2D6FF',
+      'Lighter (100)': '#EBF1FF',
+    }}
+  />
+  <ColorItem
+    title="Neutros"
+    subtitle="Escala de cinza para textos e superfícies"
+    colors={{
+      '900 (Preto)': '#0A0D14',
+      '700': '#20232D',
+      '500': '#525866',
+      '300': '#CDD0D5',
+      '100': '#F6F8FA',
+      '0 (Branco)': '#FFFFFF',
+    }}
+  />
+</ColorPalette>
+
+# Cores Semânticas (Feedback)
+
+<ColorPalette>
+  <ColorItem 
+    title="Status" 
+    subtitle="Feedback de sistema" 
+    colors={{ 
+      'Success': '#38C793', 
+      'Error': '#FF5422', 
+      'Warning': '#FFEA00' 
+    }} 
+  />
+</ColorPalette>

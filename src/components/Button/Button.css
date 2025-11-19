@@ -1,26 +1,32 @@
+/* src/components/Button/Button.css */
+
 .exa-button {
   /* Estrutura Base */
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--spacing-gap-content-xs, 8px); /* Ícone + Texto */
-  border: none;
+  gap: var(--spacing-gap-content-sm, 8px);
+  
+  border: 1px solid transparent; /* Prepara para variantes com borda */
   cursor: pointer;
-  font-family: var(--font-family-inter);
-  font-weight: var(--font-weight-medium);
-  transition: all 0.2s ease-in-out;
   white-space: nowrap;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
   
-  /* Acessibilidade: Focus Ring da Marca */
+  /* Tipografia Base (pode ser sobrescrita pelos tamanhos) */
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+
+  /* Acessibilidade: Focus Ring */
   outline: none;
 }
 
 .exa-button:focus-visible {
-  box-shadow: 0 0 0 4px var(--bg-accent-primary-hover, #0C4ECC); /* Anel de foco externo */
+  box-shadow: 0 0 0 4px var(--border-accent-secondary, #C2D6FF);
 }
 
-.exa-button:disabled {
+.exa-button:disabled,
+.exa-button--loading {
   cursor: not-allowed;
   opacity: 0.6;
   pointer-events: none;
@@ -28,62 +34,79 @@
 
 /* --- VARIANTES --- */
 
-/* Primary: Ação Principal (Entrar, Salvar) */
+/* Primary: Ação Principal */
 .exa-button--primary {
   background-color: var(--bg-accent-primary);
-  color: var(--text-on-brand); /* Contraste garantido */
-  border-radius: var(--border-radius-lg); /* Estilo arredondado da EXA */
+  color: var(--color-neutral-0, #FFFFFF); /* Garante contraste no azul */
+  border-radius: var(--border-radius-lg, 12px);
 }
 
 .exa-button--primary:hover {
   background-color: var(--bg-accent-primary-hover);
-  transform: translateY(-1px); /* Micro-interação sutil */
   box-shadow: var(--effect-drop-shadow-sm);
 }
 
-/* Secondary: Outline (Cancelar, Voltar) */
+/* Secondary: Outline */
 .exa-button--secondary {
   background-color: transparent;
-  border: 1px solid var(--border-accent-primary); /* Borda da marca */
+  border-color: var(--border-accent-primary);
   color: var(--text-accent-primary);
-  border-radius: var(--border-radius-lg);
+  border-radius: var(--border-radius-lg, 12px);
 }
 
 .exa-button--secondary:hover {
-  background-color: var(--bg-secondary-hover); /* Fundo sutil no hover */
+  background-color: var(--bg-secondary-hover);
 }
 
-/* Danger: Ações Destrutivas (Excluir) */
+/* Tertiary: Ghost */
+.exa-button--tertiary {
+  background-color: transparent;
+  color: var(--text-secondary);
+  border-radius: var(--border-radius-lg, 12px);
+}
+
+.exa-button--tertiary:hover {
+  background-color: var(--bg-tertiary-hover);
+  color: var(--text-primary);
+}
+
+/* Danger: Ações Destrutivas */
 .exa-button--danger {
   background-color: var(--bg-error-primary);
-  color: var(--text-on-brand);
-  border-radius: var(--border-radius-lg);
+  color: var(--color-neutral-0, #FFFFFF);
+  border-radius: var(--border-radius-lg, 12px);
 }
 
 .exa-button--danger:hover {
   background-color: var(--bg-error-primary-hover);
 }
 
-/* --- TAMANHOS (DENSIDADE) --- */
+/* --- TAMANHOS (USANDO TOKENS SEMÂNTICOS) --- */
 
 .exa-button--sm {
-  font-size: var(--font-size-xs, 12px);
-  padding: var(--spacing-squish-sm-y, 6px) var(--spacing-squish-sm-x, 12px);
+  /* Usa o token de tipografia label.sm */
+  font: var(--typography-label-sm); 
+  padding: var(--spacing-inset-squish-sm, 4px 8px);
 }
 
 .exa-button--md {
-  font-size: var(--font-size-sm, 14px);
-  padding: var(--spacing-squish-md-y, 8px) var(--spacing-squish-md-x, 16px);
+  font: var(--typography-label-md);
+  padding: var(--spacing-inset-squish-md, 8px 16px);
 }
 
 .exa-button--lg {
-  font-size: var(--font-size-md, 16px);
-  padding: var(--spacing-squish-lg-y, 12px) var(--spacing-squish-lg-x, 24px);
+  font: var(--typography-label-lg);
+  /* Se não houver token squish.lg, usamos uma composição ou valor manual */
+  padding: 12px 24px; 
 }
 
-/* Estado Loading */
-.exa-button--loading {
-  color: transparent !important; /* Esconde o texto mas mantém largura */
-  position: relative;
-  pointer-events: none;
+/* --- LOADING SPINNER --- */
+.exa-button__spinner {
+  animation: spin 1s linear infinite;
+  display: flex;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }

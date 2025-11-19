@@ -1,56 +1,66 @@
-import React, { type ButtonHTMLAttributes } from 'react';
-import './Button.css'; // Importação do CSS
+import React, { ButtonHTMLAttributes, forwardRef } from 'react';
+import clsx from 'clsx';
+import './Button.css';
 
-// Definição da API do Componente
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  /** Estilo visual do botão */
   variant?: 'primary' | 'secondary' | 'tertiary' | 'danger';
+  /** Tamanho e densidade */
   size?: 'sm' | 'md' | 'lg';
+  /** Estado de carregamento */
   isLoading?: boolean;
+  /** Ícone à esquerda do texto */
   iconLeft?: React.ReactNode;
+  /** Ícone à direita do texto */
   iconRight?: React.ReactNode;
 }
 
-export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ 
-    className = '',
-    variant = 'primary', 
-    size = 'md', 
-    isLoading = false, 
-    iconLeft, 
-    iconRight, 
-    children, 
-    disabled,
-    ...props 
-  }, ref) => {
-    
-    // Montagem das classes CSS
-    const buttonClasses = [
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  (
+    {
+      children,
+      className,
+      variant = 'primary',
+      size = 'md',
+      isLoading = false,
+      iconLeft,
+      iconRight,
+      disabled,
+      ...props
+    },
+    ref
+  ) => {
+    // Combinação de classes dinâmica
+    const classes = clsx(
       'exa-button',
       `exa-button--${variant}`,
       `exa-button--${size}`,
-      isLoading ? 'exa-button--loading' : '',
+      { 'exa-button--loading': isLoading },
       className
-    ].filter(Boolean).join(' ');
+    );
 
     return (
       <button
         ref={ref}
-        className={buttonClasses}
+        className={classes}
         disabled={disabled || isLoading}
         {...props}
       >
-        {/* Renderização condicional do Spinner de Loading */}
-        {isLoading && (
+        {isLoading ? (
           <span className="exa-button__spinner">
-            {/* Aqui entraria seu componente <Spinner size="sm" /> */}
-            <svg viewBox="0 0 24 24" className="spinner-svg">...</svg>
+            {/* SVG Simples de Loading */}
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="8" cy="8" r="7" stroke="currentColor" strokeWidth="2" strokeOpacity="0.2" />
+              <path d="M8 1C11.866 1 15 4.13401 15 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+            </svg>
           </span>
+        ) : (
+          <>
+            {iconLeft && <span className="exa-button__icon">{iconLeft}</span>}
+            {children}
+            {iconRight && <span className="exa-button__icon">{iconRight}</span>}
+          </>
         )}
-
-        {/* Conteúdo do Botão */}
-        {!isLoading && iconLeft && <span className="exa-button__icon">{iconLeft}</span>}
-        <span className="exa-button__label">{children}</span>
-        {!isLoading && iconRight && <span className="exa-button__icon">{iconRight}</span>}
       </button>
     );
   }
